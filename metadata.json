@@ -1,0 +1,6 @@
+{
+  "name": "The Birthday Experiment",
+  "description": "A mysterious, funny, interactive experiment that playfully investigates you before revealing an unexpected birthday celebration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

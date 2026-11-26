@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@keyframes candle-flicker {
+  0%, 100% {
+    transform: scale(1) rotate(-2deg) translateY(0px);
+    opacity: 0.95;
+  }
+  25% {
+    transform: scale(1.06, 0.96) rotate(2.5deg) translateY(-1px);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.96, 1.07) rotate(-1.5deg) translateY(-1.5px);
+    opacity: 0.9;
+  }
+  75% {
+    transform: scale(1.03, 0.98) rotate(1.5deg) translateY(-0.5px);
+    opacity: 1;
+  }
+}
+
+@keyframes candle-aura {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.72;
+  }
+}
+
+.animate-candle-flicker {
+  animation: candle-flicker 1.6s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-candle-aura {
+  animation: candle-aura 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-candle-flicker,
+  .animate-candle-aura {
+    animation: none;
+  }
+}
